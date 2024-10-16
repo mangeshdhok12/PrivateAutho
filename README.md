@@ -1,6 +1,9 @@
 Basic JWT Authentication with MongoDB
+
 Overview
+
 This project implements a basic JWT authentication system using Node.js, Express, and MongoDB. It includes public and private routes, where the private route is accessible only with a valid JWT token. The user ID is stored in MongoDB when generating the token.
+
 
 Technologies Used
 Node.js
@@ -13,16 +16,23 @@ Setup Instructions
 Prerequisites
 Node.js installed
 MongoDB installed and running (or access to a MongoDB Atlas cluster)
+
 Step 1: Clone the Repository
+
 Step 2: Install Dependencies
 
 Step 3: Create Environment Variables
 Create a .env file in the root of your project with the following content:
+
 JWT_SECRET=your_jwt_secret
+
 MONGODB_URI=mongodb+srv://dhokmangesh678:mangesh123@privateclu.lrpgd.mongodb.net/?retryWrites=true&w=majority&appName=privateClu
 
 Step 4: Start the Server
+
+
 API Endpoints
+
 1. Generate Token and Store UserId
 Endpoint: POST /api/generate-token
 Request Body:  { "userId": "12345"}
